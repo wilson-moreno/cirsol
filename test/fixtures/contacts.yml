@@ -1,0 +1,61 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  record_number: MyString
+  record_date: 2017-07-14
+  birthdate: 2017-07-14
+  last_name: MyString
+  first_name: MyString
+  nick_name: MyString
+  gender: MyString
+  marital_status: MyString
+  nationality: MyString
+  profile_picture: 
+  house_number: MyString
+  street_name: MyString
+  subdivision: MyString
+  barangays: MyString
+  district: MyString
+  personal_background: MyText
+  family_background: MyText
+  work_background: MyText
+  phone_number: MyString
+  mobile_number: MyString
+  email_address: MyString
+  skype_account: MyString
+  facebook_account: MyString
+  fathers_name: MyString
+  mothers_name: MyString
+  guardians_name: MyString
+  postal_code: MyString
+  zone: MyString
+
+two:
+  record_number: MyString
+  record_date: 2017-07-14
+  birthdate: 2017-07-14
+  last_name: MyString
+  first_name: MyString
+  nick_name: MyString
+  gender: MyString
+  marital_status: MyString
+  nationality: MyString
+  profile_picture: 
+  house_number: MyString
+  street_name: MyString
+  subdivision: MyString
+  barangays: MyString
+  district: MyString
+  personal_background: MyText
+  family_background: MyText
+  work_background: MyText
+  phone_number: MyString
+  mobile_number: MyString
+  email_address: MyString
+  skype_account: MyString
+  facebook_account: MyString
+  fathers_name: MyString
+  mothers_name: MyString
+  guardians_name: MyString
+  postal_code: MyString
+  zone: MyString

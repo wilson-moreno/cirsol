@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  image: 
+  latitude: MyString
+  longitude: MyString
+  width: 1
+  height: 1
+  scale: 1
+  zoom: 1
+  image_format: MyString
+  map_type: MyString
+  marker_color: MyString
+  accuracy: 1
+  marker_label: MyString
+
+two:
+  image: 
+  latitude: MyString
+  longitude: MyString
+  width: 1
+  height: 1
+  scale: 1
+  zoom: 1
+  image_format: MyString
+  map_type: MyString
+  marker_color: MyString
+  accuracy: 1
+  marker_label: MyString

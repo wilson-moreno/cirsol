@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  call_date: 2017-07-14
+  call_day: MyString
+  call_time: MyString
+  scriptures: MyString
+  literature: MyString
+  publishers: MyString
+  notes: MyText
+
+two:
+  call_date: 2017-07-14
+  call_day: MyString
+  call_time: MyString
+  scriptures: MyString
+  literature: MyString
+  publishers: MyString
+  notes: MyText
