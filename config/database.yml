@@ -10,8 +10,8 @@ default: &default
   pool: 5
   timeout: 5000
   min_messages: warning
-  username: root
-  password: unitrade
+  username: cirsol
+  password: puwad93X5yQhwRHUsbGxULR
   socket: /var/run/mysqld/mysqld.sock
 
 development:

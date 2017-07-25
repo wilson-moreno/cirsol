@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20170714074405) do
 
-  create_table "cirs_call_statuses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "cirs_call_statuses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "name"
     t.string   "description"
     t.boolean  "enabled"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20170714074405) do
     t.datetime "updated_at",  null: false
   end
 
-  create_table "cirs_calls", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "cirs_calls", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.date     "call_date"
     t.string   "call_day"
     t.string   "call_time"
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20170714074405) do
     t.index ["contact_id"], name: "fk_rails_b16aa348ac", using: :btree
   end
 
-  create_table "cirs_circuits", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "cirs_circuits", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "name"
     t.string   "short_name"
     t.integer  "circuit_overseer_id"
@@ -47,14 +47,14 @@ ActiveRecord::Schema.define(version: 20170714074405) do
     t.index ["language_id"], name: "fk_rails_8c97beafc5", using: :btree
   end
 
-  create_table "cirs_cities", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "cirs_cities", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "name"
     t.string   "short_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "cirs_congregations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "cirs_congregations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "name"
     t.string   "address_1"
     t.string   "address_2"
@@ -69,7 +69,7 @@ ActiveRecord::Schema.define(version: 20170714074405) do
     t.index ["language_id"], name: "fk_rails_527fd5a91e", using: :btree
   end
 
-  create_table "cirs_contact_statuses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "cirs_contact_statuses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "name"
     t.text     "description", limit: 65535
     t.boolean  "enabled"
@@ -81,7 +81,7 @@ ActiveRecord::Schema.define(version: 20170714074405) do
     t.datetime "updated_at",                null: false
   end
 
-  create_table "cirs_contacts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "cirs_contacts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "record_number"
     t.date     "record_date"
     t.date     "birthdate"
@@ -134,7 +134,7 @@ ActiveRecord::Schema.define(version: 20170714074405) do
     t.index ["territory_id"], name: "fk_rails_26858e81af", using: :btree
   end
 
-  create_table "cirs_languages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "cirs_languages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "name"
     t.text     "description", limit: 65535
     t.string   "short_name"
@@ -142,7 +142,7 @@ ActiveRecord::Schema.define(version: 20170714074405) do
     t.datetime "updated_at",                null: false
   end
 
-  create_table "cirs_location_maps", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "cirs_location_maps", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.binary   "image",        limit: 65535
     t.string   "latitude"
     t.string   "longitude"
@@ -161,21 +161,21 @@ ActiveRecord::Schema.define(version: 20170714074405) do
     t.index ["contact_id"], name: "fk_rails_c2b09694ef", using: :btree
   end
 
-  create_table "cirs_municipals", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "cirs_municipals", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "name"
     t.string   "short_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "cirs_provinces", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "cirs_provinces", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "name"
     t.string   "short_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "cirs_publishers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "cirs_publishers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.string   "mobile_number"
@@ -189,14 +189,14 @@ ActiveRecord::Schema.define(version: 20170714074405) do
     t.index ["service_privilege_id"], name: "fk_rails_4bf7810749", using: :btree
   end
 
-  create_table "cirs_religions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "cirs_religions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "name"
     t.string   "short_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "cirs_service_groups", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "cirs_service_groups", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "group_name"
     t.integer  "congregation_id"
     t.integer  "group_overseer_id"
@@ -208,7 +208,7 @@ ActiveRecord::Schema.define(version: 20170714074405) do
     t.index ["group_overseer_id"], name: "fk_rails_78c8c1d524", using: :btree
   end
 
-  create_table "cirs_service_privileges", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "cirs_service_privileges", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "name"
     t.text     "description", limit: 65535
     t.string   "short_name"
@@ -216,7 +216,7 @@ ActiveRecord::Schema.define(version: 20170714074405) do
     t.datetime "updated_at",                null: false
   end
 
-  create_table "cirs_territories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "cirs_territories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "name"
     t.string   "description"
     t.boolean  "enabled"
