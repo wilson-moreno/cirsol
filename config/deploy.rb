@@ -9,6 +9,15 @@ set :deploy_to, '/home/deploy/cirsol'
 append :linked_files, "config/database.yml", "config/secrets.yml"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 
+namespace :deploy do
+   desc 'Restart application'
+   task :restart do
+       on roles(:app), in: :sequence, wait: 5 do
+          execute :touch, release_path.join('tmp/restart.txt')
+       end
+   end
+end
+
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
